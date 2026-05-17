@@ -31,6 +31,7 @@ export function PerspectiveBook({
         style={{
           width: sizeMap[size].width,
           borderRadius: "6px 4px 4px 6px",
+          willChange: "transform",
         }}
         className={`transition-transform duration-300 ease-out relative [transform-style:preserve-3d] [transform:rotateY(0deg)] group-hover:[transform:rotateY(-20deg)] group-hover:scale-[1.066] group-hover:-translate-x-1 aspect-[49/60]`}
       >
@@ -43,6 +44,8 @@ export function PerspectiveBook({
           style={{
             transform: "translateZ(25px)",
             borderRadius: "6px 4px 4px 6px",
+            backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
           }}
         >
           <div
@@ -69,8 +72,8 @@ export function PerspectiveBook({
         <div
           className="absolute left-0 bg-[linear-gradient(90deg,#eaeaea_0%,#0000_80%),linear-gradient(#fff,#fafafa)]"
           style={{
-            top: "3px",
-            bottom: "3px",
+            top: "1px",
+            bottom: "1px",
             width: "48px",
             transform: `translateX(${
               sizeMap[size].spineTranslation
@@ -87,6 +90,8 @@ export function PerspectiveBook({
           style={{
             transform: "translateZ(-25px)",
             borderRadius: "6px 4px 4px 6px",
+            backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
           }}
         ></div>
       </div>

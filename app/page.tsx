@@ -23,10 +23,10 @@ export default function Page() {
               />
             </h1>
             <p className="text-lg text-balance text-muted-foreground">
-              Conscientização e educação
+              Conscientização e educação infantil
             </p>
             <div className="flex flex-row gap-4">
-              <a
+              <Link
                 href="/historia"
                 className={cn(
                   buttonVariants({ variant: "default", size: "lg" }),
@@ -35,8 +35,8 @@ export default function Page() {
               >
                 <HugeiconsIcon icon={BookOpen} strokeWidth={2} /> Histórias
                 <span className="sr-only">Histórias</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/quiz"
                 className={cn(
                   buttonVariants({ variant: "default", size: "lg" }),
@@ -45,7 +45,7 @@ export default function Page() {
               >
                 <HugeiconsIcon icon={Quiz05Icon} strokeWidth={2} /> Quizes
                 <span className="sr-only">Quizes</span>
-              </a>
+              </Link>
             </div>
           </div>
 

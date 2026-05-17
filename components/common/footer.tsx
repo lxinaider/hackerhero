@@ -3,7 +3,7 @@ import { buttonVariants } from "../ui/button";
 
 export function Footer() {
   return (
-    <footer className="border mt-5 border-primary/30 h-fit w-full flex items-center justify-start px-5 py-6 bg-linear-to-b from-accent to-primary/60 bottom-0 rounded-3xl">
+    <footer className="relative overflow-clip border mt-5 border-primary/30 h-fit w-full flex items-center justify-start px-5 py-6 bg-linear-to-b from-accent to-primary/60 bottom-0 rounded-3xl">
       <section
         className="flex flex-col flex-wrap items-start justify-center gap-0.5"
         style={{ maxHeight: "8rem" }}
@@ -31,7 +31,7 @@ export function Footer() {
       <img
         src="/bigflower.svg"
         alt="Big flower"
-        className="absolute -bottom-16 -right-10 w-48"
+        className="absolute -bottom-8 -right-0 w-24"
       />
     </footer>
   );
